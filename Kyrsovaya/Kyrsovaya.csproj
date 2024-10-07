@@ -1,0 +1,1168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7F9FDAEF-D02D-4525-9CE5-E073E33EE350}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Kyrsovaya</RootNamespace>
+    <AssemblyName>Kyrsovaya</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddExamen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddExamen.Designer.cs">
+      <DependentUpon>FormAddExamen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddKurs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddKurs.Designer.cs">
+      <DependentUpon>FormAddKurs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddOchenki.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddOchenki.Designer.cs">
+      <DependentUpon>FormAddOchenki.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddPrepod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddPrepod.Designer.cs">
+      <DependentUpon>FormAddPrepod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddStud.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddStud.Designer.cs">
+      <DependentUpon>FormAddStud.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddUspe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddUspe.Designer.cs">
+      <DependentUpon>FormAddUspe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddZapis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddZapis.Designer.cs">
+      <DependentUpon>FormAddZapis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditExamen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditExamen.Designer.cs">
+      <DependentUpon>FormEditExamen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditKurs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditKurs.Designer.cs">
+      <DependentUpon>FormEditKurs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditOchenki.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditOchenki.Designer.cs">
+      <DependentUpon>FormEditOchenki.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditPrepod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditPrepod.Designer.cs">
+      <DependentUpon>FormEditPrepod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditStud.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditStud.Designer.cs">
+      <DependentUpon>FormEditStud.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditUspe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditUspe.Designer.cs">
+      <DependentUpon>FormEditUspe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditZapis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditZapis.Designer.cs">
+      <DependentUpon>FormEditZapis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormExamen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormExamen.Designer.cs">
+      <DependentUpon>FormExamen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOchenki.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOchenki.Designer.cs">
+      <DependentUpon>FormOchenki.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPrepodavatel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPrepodavatel.Designer.cs">
+      <DependentUpon>FormPrepodavatel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStudent.Designer.cs">
+      <DependentUpon>FormStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUspevaemost.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUspevaemost.Designer.cs">
+      <DependentUpon>FormUspevaemost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVhod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVhod.Designer.cs">
+      <DependentUpon>FormVhod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormZapis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormZapis.Designer.cs">
+      <DependentUpon>FormZapis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Uchebnye_kursiDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Uchebnye_kursiDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Uchebnye_kursiDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Uchebnye_kursiDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Uchebnye_kursiDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Uchebnye_kursiDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Uchebnye_kursiDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Uchebnye_kursiDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Uchebnye_kursiDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Uchebnye_kursiDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Uchebnye_kursiDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Uchebnye_kursiDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Uchebnye_kursiDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Uchebnye_kursiDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Uchebnye_kursiDataSet15.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Uchebnye_kursiDataSet15.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Uchebnye_kursiDataSet16.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Uchebnye_kursiDataSet16.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Uchebnye_kursiDataSet17.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Uchebnye_kursiDataSet17.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Uchebnye_kursiDataSet18.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Uchebnye_kursiDataSet18.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Uchebnye_kursiDataSet19.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Uchebnye_kursiDataSet19.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Uchebnye_kursiDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Uchebnye_kursiDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Uchebnye_kursiDataSet20.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Uchebnye_kursiDataSet20.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Uchebnye_kursiDataSet21.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Uchebnye_kursiDataSet21.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Uchebnye_kursiDataSet22.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Uchebnye_kursiDataSet22.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Uchebnye_kursiDataSet23.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Uchebnye_kursiDataSet23.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Uchebnye_kursiDataSet24.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Uchebnye_kursiDataSet24.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Uchebnye_kursiDataSet25.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Uchebnye_kursiDataSet25.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Uchebnye_kursiDataSet26.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Uchebnye_kursiDataSet26.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Uchebnye_kursiDataSet27.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Uchebnye_kursiDataSet27.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Uchebnye_kursiDataSet28.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Uchebnye_kursiDataSet28.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Uchebnye_kursiDataSet29.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Uchebnye_kursiDataSet29.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Uchebnye_kursiDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Uchebnye_kursiDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Uchebnye_kursiDataSet30.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Uchebnye_kursiDataSet30.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Uchebnye_kursiDataSet31.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Uchebnye_kursiDataSet31.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Uchebnye_kursiDataSet32.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Uchebnye_kursiDataSet32.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Uchebnye_kursiDataSet331.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Uchebnye_kursiDataSet331.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Uchebnye_kursiDataSet341.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Uchebnye_kursiDataSet341.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Uchebnye_kursiDataSet351.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Uchebnye_kursiDataSet351.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Uchebnye_kursiDataSet361.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Uchebnye_kursiDataSet361.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Uchebnye_kursiDataSet371.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Uchebnye_kursiDataSet371.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Uchebnye_kursiDataSet381.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Uchebnye_kursiDataSet381.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Uchebnye_kursiDataSet391.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Uchebnye_kursiDataSet391.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Uchebnye_kursiDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Uchebnye_kursiDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Uchebnye_kursiDataSet401.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Uchebnye_kursiDataSet401.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Uchebnye_kursiDataSet411.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Uchebnye_kursiDataSet411.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Uchebnye_kursiDataSet42.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Uchebnye_kursiDataSet42.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Uchebnye_kursiDataSet43.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Uchebnye_kursiDataSet43.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Uchebnye_kursiDataSet44.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Uchebnye_kursiDataSet44.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Uchebnye_kursiDataSet45.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Uchebnye_kursiDataSet45.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Uchebnye_kursiDataSet46.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Uchebnye_kursiDataSet46.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Uchebnye_kursiDataSet47.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Uchebnye_kursiDataSet47.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Uchebnye_kursiDataSet48.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Uchebnye_kursiDataSet48.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Uchebnye_kursiDataSet49.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Uchebnye_kursiDataSet49.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Uchebnye_kursiDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Uchebnye_kursiDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Uchebnye_kursiDataSet50.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Uchebnye_kursiDataSet50.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Uchebnye_kursiDataSet51.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Uchebnye_kursiDataSet51.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Uchebnye_kursiDataSet52.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Uchebnye_kursiDataSet52.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Uchebnye_kursiDataSet53.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Uchebnye_kursiDataSet53.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Uchebnye_kursiDataSet54.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Uchebnye_kursiDataSet54.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Uchebnye_kursiDataSet55.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Uchebnye_kursiDataSet55.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Uchebnye_kursiDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Uchebnye_kursiDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Uchebnye_kursiDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Uchebnye_kursiDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Uchebnye_kursiDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Uchebnye_kursiDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Uchebnye_kursiDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Uchebnye_kursiDataSet9.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddExamen.resx">
+      <DependentUpon>FormAddExamen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddKurs.resx">
+      <DependentUpon>FormAddKurs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddOchenki.resx">
+      <DependentUpon>FormAddOchenki.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddPrepod.resx">
+      <DependentUpon>FormAddPrepod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddStud.resx">
+      <DependentUpon>FormAddStud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddUspe.resx">
+      <DependentUpon>FormAddUspe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddZapis.resx">
+      <DependentUpon>FormAddZapis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditExamen.resx">
+      <DependentUpon>FormEditExamen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditKurs.resx">
+      <DependentUpon>FormEditKurs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditOchenki.resx">
+      <DependentUpon>FormEditOchenki.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditPrepod.resx">
+      <DependentUpon>FormEditPrepod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditStud.resx">
+      <DependentUpon>FormEditStud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditUspe.resx">
+      <DependentUpon>FormEditUspe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditZapis.resx">
+      <DependentUpon>FormEditZapis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormExamen.resx">
+      <DependentUpon>FormExamen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOchenki.resx">
+      <DependentUpon>FormOchenki.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPrepodavatel.resx">
+      <DependentUpon>FormPrepodavatel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStudent.resx">
+      <DependentUpon>FormStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUspevaemost.resx">
+      <DependentUpon>FormUspevaemost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVhod.resx">
+      <DependentUpon>FormVhod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormZapis.resx">
+      <DependentUpon>FormZapis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Uchebnye_kursiDataSet.xsc">
+      <DependentUpon>Uchebnye_kursiDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Uchebnye_kursiDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Uchebnye_kursiDataSet.xss">
+      <DependentUpon>Uchebnye_kursiDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet1.xsc">
+      <DependentUpon>Uchebnye_kursiDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Uchebnye_kursiDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Uchebnye_kursiDataSet1.xss">
+      <DependentUpon>Uchebnye_kursiDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet10.xsc">
+      <DependentUpon>Uchebnye_kursiDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Uchebnye_kursiDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Uchebnye_kursiDataSet10.xss">
+      <DependentUpon>Uchebnye_kursiDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet11.xsc">
+      <DependentUpon>Uchebnye_kursiDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Uchebnye_kursiDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Uchebnye_kursiDataSet11.xss">
+      <DependentUpon>Uchebnye_kursiDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet12.xsc">
+      <DependentUpon>Uchebnye_kursiDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Uchebnye_kursiDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Uchebnye_kursiDataSet12.xss">
+      <DependentUpon>Uchebnye_kursiDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet13.xsc">
+      <DependentUpon>Uchebnye_kursiDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Uchebnye_kursiDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Uchebnye_kursiDataSet13.xss">
+      <DependentUpon>Uchebnye_kursiDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet14.xsc">
+      <DependentUpon>Uchebnye_kursiDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Uchebnye_kursiDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Uchebnye_kursiDataSet14.xss">
+      <DependentUpon>Uchebnye_kursiDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet15.xsc">
+      <DependentUpon>Uchebnye_kursiDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet15.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Uchebnye_kursiDataSet15.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Uchebnye_kursiDataSet15.xss">
+      <DependentUpon>Uchebnye_kursiDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet16.xsc">
+      <DependentUpon>Uchebnye_kursiDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet16.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Uchebnye_kursiDataSet16.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Uchebnye_kursiDataSet16.xss">
+      <DependentUpon>Uchebnye_kursiDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet17.xsc">
+      <DependentUpon>Uchebnye_kursiDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet17.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Uchebnye_kursiDataSet17.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Uchebnye_kursiDataSet17.xss">
+      <DependentUpon>Uchebnye_kursiDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet18.xsc">
+      <DependentUpon>Uchebnye_kursiDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet18.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Uchebnye_kursiDataSet18.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Uchebnye_kursiDataSet18.xss">
+      <DependentUpon>Uchebnye_kursiDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet19.xsc">
+      <DependentUpon>Uchebnye_kursiDataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet19.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Uchebnye_kursiDataSet19.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Uchebnye_kursiDataSet19.xss">
+      <DependentUpon>Uchebnye_kursiDataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet2.xsc">
+      <DependentUpon>Uchebnye_kursiDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Uchebnye_kursiDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Uchebnye_kursiDataSet2.xss">
+      <DependentUpon>Uchebnye_kursiDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet20.xsc">
+      <DependentUpon>Uchebnye_kursiDataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet20.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Uchebnye_kursiDataSet20.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Uchebnye_kursiDataSet20.xss">
+      <DependentUpon>Uchebnye_kursiDataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet21.xsc">
+      <DependentUpon>Uchebnye_kursiDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet21.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Uchebnye_kursiDataSet21.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Uchebnye_kursiDataSet21.xss">
+      <DependentUpon>Uchebnye_kursiDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet22.xsc">
+      <DependentUpon>Uchebnye_kursiDataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet22.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Uchebnye_kursiDataSet22.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Uchebnye_kursiDataSet22.xss">
+      <DependentUpon>Uchebnye_kursiDataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet23.xsc">
+      <DependentUpon>Uchebnye_kursiDataSet23.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet23.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Uchebnye_kursiDataSet23.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Uchebnye_kursiDataSet23.xss">
+      <DependentUpon>Uchebnye_kursiDataSet23.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet24.xsc">
+      <DependentUpon>Uchebnye_kursiDataSet24.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet24.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Uchebnye_kursiDataSet24.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Uchebnye_kursiDataSet24.xss">
+      <DependentUpon>Uchebnye_kursiDataSet24.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet25.xsc">
+      <DependentUpon>Uchebnye_kursiDataSet25.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet25.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Uchebnye_kursiDataSet25.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Uchebnye_kursiDataSet25.xss">
+      <DependentUpon>Uchebnye_kursiDataSet25.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet26.xsc">
+      <DependentUpon>Uchebnye_kursiDataSet26.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet26.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Uchebnye_kursiDataSet26.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Uchebnye_kursiDataSet26.xss">
+      <DependentUpon>Uchebnye_kursiDataSet26.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet27.xsc">
+      <DependentUpon>Uchebnye_kursiDataSet27.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet27.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Uchebnye_kursiDataSet27.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Uchebnye_kursiDataSet27.xss">
+      <DependentUpon>Uchebnye_kursiDataSet27.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet28.xsc">
+      <DependentUpon>Uchebnye_kursiDataSet28.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet28.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Uchebnye_kursiDataSet28.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Uchebnye_kursiDataSet28.xss">
+      <DependentUpon>Uchebnye_kursiDataSet28.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet29.xsc">
+      <DependentUpon>Uchebnye_kursiDataSet29.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet29.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Uchebnye_kursiDataSet29.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Uchebnye_kursiDataSet29.xss">
+      <DependentUpon>Uchebnye_kursiDataSet29.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet3.xsc">
+      <DependentUpon>Uchebnye_kursiDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Uchebnye_kursiDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Uchebnye_kursiDataSet3.xss">
+      <DependentUpon>Uchebnye_kursiDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet30.xsc">
+      <DependentUpon>Uchebnye_kursiDataSet30.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet30.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Uchebnye_kursiDataSet30.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Uchebnye_kursiDataSet30.xss">
+      <DependentUpon>Uchebnye_kursiDataSet30.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet31.xsc">
+      <DependentUpon>Uchebnye_kursiDataSet31.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet31.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Uchebnye_kursiDataSet31.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Uchebnye_kursiDataSet31.xss">
+      <DependentUpon>Uchebnye_kursiDataSet31.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet32.xsc">
+      <DependentUpon>Uchebnye_kursiDataSet32.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet32.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Uchebnye_kursiDataSet32.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Uchebnye_kursiDataSet32.xss">
+      <DependentUpon>Uchebnye_kursiDataSet32.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet331.xsc">
+      <DependentUpon>Uchebnye_kursiDataSet331.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet331.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Uchebnye_kursiDataSet331.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Uchebnye_kursiDataSet331.xss">
+      <DependentUpon>Uchebnye_kursiDataSet331.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet341.xsc">
+      <DependentUpon>Uchebnye_kursiDataSet341.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet341.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Uchebnye_kursiDataSet341.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Uchebnye_kursiDataSet341.xss">
+      <DependentUpon>Uchebnye_kursiDataSet341.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet351.xsc">
+      <DependentUpon>Uchebnye_kursiDataSet351.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet351.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Uchebnye_kursiDataSet351.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Uchebnye_kursiDataSet351.xss">
+      <DependentUpon>Uchebnye_kursiDataSet351.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet361.xsc">
+      <DependentUpon>Uchebnye_kursiDataSet361.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet361.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Uchebnye_kursiDataSet361.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Uchebnye_kursiDataSet361.xss">
+      <DependentUpon>Uchebnye_kursiDataSet361.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet371.xsc">
+      <DependentUpon>Uchebnye_kursiDataSet371.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet371.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Uchebnye_kursiDataSet371.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Uchebnye_kursiDataSet371.xss">
+      <DependentUpon>Uchebnye_kursiDataSet371.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet381.xsc">
+      <DependentUpon>Uchebnye_kursiDataSet381.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet381.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Uchebnye_kursiDataSet381.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Uchebnye_kursiDataSet381.xss">
+      <DependentUpon>Uchebnye_kursiDataSet381.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet391.xsc">
+      <DependentUpon>Uchebnye_kursiDataSet391.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet391.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Uchebnye_kursiDataSet391.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Uchebnye_kursiDataSet391.xss">
+      <DependentUpon>Uchebnye_kursiDataSet391.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet4.xsc">
+      <DependentUpon>Uchebnye_kursiDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Uchebnye_kursiDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Uchebnye_kursiDataSet4.xss">
+      <DependentUpon>Uchebnye_kursiDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet401.xsc">
+      <DependentUpon>Uchebnye_kursiDataSet401.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet401.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Uchebnye_kursiDataSet401.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Uchebnye_kursiDataSet401.xss">
+      <DependentUpon>Uchebnye_kursiDataSet401.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet411.xsc">
+      <DependentUpon>Uchebnye_kursiDataSet411.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet411.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Uchebnye_kursiDataSet411.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Uchebnye_kursiDataSet411.xss">
+      <DependentUpon>Uchebnye_kursiDataSet411.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet42.xsc">
+      <DependentUpon>Uchebnye_kursiDataSet42.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet42.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Uchebnye_kursiDataSet42.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Uchebnye_kursiDataSet42.xss">
+      <DependentUpon>Uchebnye_kursiDataSet42.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet43.xsc">
+      <DependentUpon>Uchebnye_kursiDataSet43.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet43.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Uchebnye_kursiDataSet43.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Uchebnye_kursiDataSet43.xss">
+      <DependentUpon>Uchebnye_kursiDataSet43.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet44.xsc">
+      <DependentUpon>Uchebnye_kursiDataSet44.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet44.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Uchebnye_kursiDataSet44.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Uchebnye_kursiDataSet44.xss">
+      <DependentUpon>Uchebnye_kursiDataSet44.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet45.xsc">
+      <DependentUpon>Uchebnye_kursiDataSet45.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet45.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Uchebnye_kursiDataSet45.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Uchebnye_kursiDataSet45.xss">
+      <DependentUpon>Uchebnye_kursiDataSet45.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet46.xsc">
+      <DependentUpon>Uchebnye_kursiDataSet46.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet46.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Uchebnye_kursiDataSet46.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Uchebnye_kursiDataSet46.xss">
+      <DependentUpon>Uchebnye_kursiDataSet46.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet47.xsc">
+      <DependentUpon>Uchebnye_kursiDataSet47.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet47.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Uchebnye_kursiDataSet47.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Uchebnye_kursiDataSet47.xss">
+      <DependentUpon>Uchebnye_kursiDataSet47.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet48.xsc">
+      <DependentUpon>Uchebnye_kursiDataSet48.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet48.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Uchebnye_kursiDataSet48.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Uchebnye_kursiDataSet48.xss">
+      <DependentUpon>Uchebnye_kursiDataSet48.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet49.xsc">
+      <DependentUpon>Uchebnye_kursiDataSet49.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet49.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Uchebnye_kursiDataSet49.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Uchebnye_kursiDataSet49.xss">
+      <DependentUpon>Uchebnye_kursiDataSet49.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet5.xsc">
+      <DependentUpon>Uchebnye_kursiDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Uchebnye_kursiDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Uchebnye_kursiDataSet5.xss">
+      <DependentUpon>Uchebnye_kursiDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet50.xsc">
+      <DependentUpon>Uchebnye_kursiDataSet50.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet50.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Uchebnye_kursiDataSet50.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Uchebnye_kursiDataSet50.xss">
+      <DependentUpon>Uchebnye_kursiDataSet50.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet51.xsc">
+      <DependentUpon>Uchebnye_kursiDataSet51.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet51.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Uchebnye_kursiDataSet51.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Uchebnye_kursiDataSet51.xss">
+      <DependentUpon>Uchebnye_kursiDataSet51.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet52.xsc">
+      <DependentUpon>Uchebnye_kursiDataSet52.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet52.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Uchebnye_kursiDataSet52.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Uchebnye_kursiDataSet52.xss">
+      <DependentUpon>Uchebnye_kursiDataSet52.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet53.xsc">
+      <DependentUpon>Uchebnye_kursiDataSet53.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet53.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Uchebnye_kursiDataSet53.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Uchebnye_kursiDataSet53.xss">
+      <DependentUpon>Uchebnye_kursiDataSet53.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet54.xsc">
+      <DependentUpon>Uchebnye_kursiDataSet54.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet54.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Uchebnye_kursiDataSet54.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Uchebnye_kursiDataSet54.xss">
+      <DependentUpon>Uchebnye_kursiDataSet54.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet55.xsc">
+      <DependentUpon>Uchebnye_kursiDataSet55.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet55.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Uchebnye_kursiDataSet55.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Uchebnye_kursiDataSet55.xss">
+      <DependentUpon>Uchebnye_kursiDataSet55.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet6.xsc">
+      <DependentUpon>Uchebnye_kursiDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Uchebnye_kursiDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Uchebnye_kursiDataSet6.xss">
+      <DependentUpon>Uchebnye_kursiDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet7.xsc">
+      <DependentUpon>Uchebnye_kursiDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Uchebnye_kursiDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Uchebnye_kursiDataSet7.xss">
+      <DependentUpon>Uchebnye_kursiDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet8.xsc">
+      <DependentUpon>Uchebnye_kursiDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Uchebnye_kursiDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Uchebnye_kursiDataSet8.xss">
+      <DependentUpon>Uchebnye_kursiDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet9.xsc">
+      <DependentUpon>Uchebnye_kursiDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Uchebnye_kursiDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Uchebnye_kursiDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Uchebnye_kursiDataSet9.xss">
+      <DependentUpon>Uchebnye_kursiDataSet9.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
